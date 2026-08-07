@@ -14,8 +14,8 @@ document.querySelector("#header").innerHTML = `
 <div id="navLinks">
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
-<a href="https://www.google.com/">Store</a>
-<a href="https://www.patreon.com/">Patreon</a>
+<a href="about.html">Store</a>
+<a href="index.html">Your Mom</a>
 </div>
 `;
 
