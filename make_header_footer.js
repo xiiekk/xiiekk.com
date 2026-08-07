@@ -13,8 +13,8 @@ document.querySelector("#header").innerHTML = `
 <h1>My Portfolio</h1>
 <div id="navLinks">
 <a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="about.html">Store</a>
+<a href="index.html">About</a>
+<a href="index.html">Store</a>
 <a href="index.html">Your Mom</a>
 </div>
 `;
