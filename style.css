@@ -1,0 +1,133 @@
+
+
+/* Removing this will mess with element sizing for the whole site*/
+* {
+  box-sizing: border-box;
+}
+
+body,
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif; /* change the main font of the site here*/
+  background: url(/images/IMG_0758.png)
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+#header h1 {
+  text-align: middle;
+}
+
+#navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/* This is only spacing for the navigation links, don't edit unless you want to change that*/
+#mainlinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 65%;
+}
+
+#mainlinks h1 {
+  font-size: 2em;
+}
+#links  {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 35%;
+}
+
+.smallintroduction {
+  padding: 200px 2em 200px 2em;
+  margin: 0 auto;
+}
+.smallintroduction h1 {
+  text-align: center;
+}
+.smallintroduction p {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+
+.main2 {
+  padding: 200px 2em 200px 2em;
+  margin: 0 auto; /* centers the main content */
+}
+
+hr {
+  margin: 2em 0;
+}
+
+#footer {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Page specific */
+.textPage {
+  max-width: 800px; /*You can remove or not use this, I just think it looks better on bigger windows */
+}
+
+/* Touching any CSS below this can break the gallery. Proceed with caution */
+.gallery {
+  padding-top: 1em;
+  /* base number of columns, can make this 1 to ?? at bigger numbers it'll look funny 
+     if you edit this, you may want to update the columns in the mobile sizing starting on line 105
+  */
+  columns: auto 3;
+  text-align: left;
+}
+
+.gallery img {
+  border: 1px solid black; /* You can remove the border if you want */
+  width: 100%;
+}
+
+figure {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.spotlightImage {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Below changes the number of columns in the gallery for smaller screens
+   If you changed the column number on line 85, you might have to edit it here too
+   (it's not exactly mobile and tablet sizing)
+    */
+@media only screen and (max-width: 800px) {
+  .gallery {
+    columns: auto 2;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery {
+    columns: auto 1;
+  }
+}
